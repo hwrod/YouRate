@@ -1,0 +1,16 @@
+{
+  "name": "YouRate",
+  "version": "1.0.0",
+  "description": "YouRate is an open-source YouTube video rating server.",
+  "scripts": {
+    "start": "meteor run --settings settings.json"
+  },
+  "author": {
+    "name": "Harold Rodriguez",
+    "email": "harold@planetharold.com"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0"
+  },
+  "license": "ISC"
+}
