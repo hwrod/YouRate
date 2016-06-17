@@ -1,0 +1,19 @@
+<template name="Submit">
+  <div class="submit">
+    <center>
+      {{#if currentUser}}
+      <form class="navbar-form navbar-center" role="search">
+        <h3>Submit a new YouTube URL</h3>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="https://www.youtube.com/..." 
+              name="url"
+              style="width: 250px">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      {{else}}
+        <h3 class="muted">Sign in to submit a new YouTube URL</h3>
+      {{/if}}
+    </center>
+  </div>
+</template>

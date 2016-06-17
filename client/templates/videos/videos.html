@@ -1,0 +1,49 @@
+<template name="Videos">
+  <div class="videos">
+
+    {{#if hasVideos}}
+      <h4>&nbsp;&nbsp;Most upvoted videos:</h4>
+    {{/if}}
+    
+    {{#each videos}}
+    <div class="media">
+
+      <div class="media-left">
+        <a href="{{url}}" target="_blank">
+          <img class="media-object" src="{{thumbnails.medium.url}}" alt="{{title}}">
+        </a>
+        {{#if currentUser}}
+        <h1 class="text-center">
+          <a href="#"><span class="glyphicon glyphicon-thumbs-up up vote" data-id="{{id}}"></span></a> vs 
+          <a href="#"><span class="glyphicon glyphicon-thumbs-down down vote" data-id="{{id}}"></span></a>
+        </h1>
+        {{else}}
+        <p class="text-center muted">Sign in to vote</p>
+        {{/if}}
+      </div>
+
+      <div class="media-body">
+        <h4 class="media-heading">
+
+          {{title}}
+
+          <br>
+
+          <small class="muted">
+            Video posted on {{date publishedAt}}
+          </small>
+
+        </h4>
+        <div style="white-space-disabled: pre-wrap; max-width: 70%;">
+          {{description}}
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    {{/each}}
+
+  </div>
+</template>
