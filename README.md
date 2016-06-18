@@ -11,5 +11,6 @@ After entering your YouTube API key into `settings.json`:
 	npm install
 	npm start
 
-Inline-style: 
+Presto: 
+
 ![YouRate screenshot](docs/screenshot.png "YouRate screenshot")
