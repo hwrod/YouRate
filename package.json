@@ -1,7 +1,7 @@
 {
   "name": "YouRate",
   "version": "1.0.0",
-  "description": "YouRate is an open-source YouTube video rating server.",
+  "description": "YouRate is an open-source YouTube video rating web app.",
   "scripts": {
     "start": "meteor run --settings settings.json"
   },

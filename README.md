@@ -1,6 +1,6 @@
 # YouRate
 
-YouRate is an open-source YouTube video rating server. 
+YouRate is an open-source YouTube video rating web app. 
 
 Simply upload a YouTube link and let the rating begin!
 
